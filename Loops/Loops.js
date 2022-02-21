@@ -59,7 +59,7 @@ const colors = ["red", "green", "blue"];
 for (let color of colors) console.log(color);
 
 // Break and Continue
-//Break
+// Break
 
 let i = 0;
 while (i <= 10) {
@@ -69,7 +69,7 @@ while (i <= 10) {
   i++;
 }
 
-//Continue
+// Continue
 
 let i = 0;
 while (i <= 10) {
