@@ -6,7 +6,7 @@
 // 80 - 89: B
 // 90 - 100: A
 
-const marks = [50, 30, 80];
+const marks = [90, 90, 90];
 
 function calculateAvg(marks) {
   let sum = 0;
@@ -27,7 +27,7 @@ function calculateGrade(marks) {
   else return "A";
 }
 
-function whatIsMyGrade() {
+function whatIsMyGrade(marks) {
   let avg = calculateGrade(marks);
 
   switch (avg) {
@@ -52,4 +52,4 @@ function whatIsMyGrade() {
   }
 }
 
-whatIsMyGrade();
+whatIsMyGrade(marks);
