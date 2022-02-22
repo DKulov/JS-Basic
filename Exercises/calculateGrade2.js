@@ -17,39 +17,29 @@ function calculateAvg(marks) {
   return avg;
 }
 
-function calculateGrade(marks) {
+function whatIsMyGrade(marks) {
   let avg = calculateAvg(marks);
 
-  if (avg <= 59) return "F";
-  else if (avg <= 69 && avg >= 60) return "D";
-  else if (avg <= 79 && avg >= 70) return "C";
-  else if (avg <= 89 && avg >= 80) return "B";
-  else return "A";
-}
-
-function whatIsMyGrade(marks) {
-  let avg = calculateGrade(marks);
-
   switch (avg) {
-    case "F":
-      console.log("F");
+    case avg <= 59:
+      return "F";
       break;
 
-    case "D":
-      console.log("D");
+    case avg <= 69 && avg >= 60:
+      return "D";
       break;
 
-    case "C":
-      console.log("C");
+    case avg <= 79 && avg >= 70:
+      return "C";
       break;
 
-    case "B":
-      console.log("B");
+    case avg <= 89 && avg >= 80:
+      return "B";
       break;
 
     default:
-      console.log("A");
+      return "A";
   }
 }
 
-whatIsMyGrade(marks);
+console.log(whatIsMyGrade(marks));
