@@ -6,13 +6,11 @@
 // 80 - 89: B
 // 90 - 100: A
 
-const marks = [50, 50, 60];
-
 function getGradesAverage(marks) {
-  let average =
+  return (
     marks.reduce((total, currentValue) => total + currentValue, 0) /
-    marks.length;
-  return average;
+    marks.length
+  );
 }
 
 function averageToGrade(average) {
@@ -38,4 +36,4 @@ function whatIsMyGrade(marks) {
   return averageToGrade(getGradesAverage(marks));
 }
 
-console.log(whatIsMyGrade(marks));
+console.log(whatIsMyGrade([]));
